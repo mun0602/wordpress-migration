@@ -36,7 +36,6 @@ fi
 if ! command -v wo &> /dev/null; then
     echo "WordOps chưa được cài đặt. Đang tiến hành cài đặt..."
     wget -qO wo wops.cc && sudo bash wo || error_exit "Cài đặt WordOps thất bại"
-    wo stack install || error_exit "Cài đặt các thành phần chính của WordOps thất bại"
 else
     echo "WordOps đã được cài đặt. Bỏ qua bước cài đặt."
 fi
